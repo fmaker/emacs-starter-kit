@@ -1,7 +1,7 @@
 loaddefs.el*
 backups/*
 auto-save-list
-custom.el
+#custom.el
 *elc
 places
 url/cookies
@@ -21,7 +21,7 @@ elpa-to-submit/nxhtml/etc/schema/xhtml-loader.rnc~
 tramp
 
 ## exported files
-*el
+#*el
 starter-kit*html
 doc
 eshell/lastdir
@@ -32,3 +32,6 @@ src
 
 ## org stuff
 .org-id-locations
+starter-kit*.el
+
+
