@@ -109,3 +109,8 @@
   (shell-command
    (format "%s -f %s/TAGS -e -R %s" path-to-ctags dir-name (directory-file-name dir-name)))
   )
+
+;; XCscope
+(require 'xcscope)
+
+
