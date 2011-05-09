@@ -77,14 +77,6 @@
 (global-set-key "\C-ck" 'mode-compile-kill)
 
 
-
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- )
-
 ;; Colors
 (set-face-background 'default "black")
 (set-face-foreground 'default "green")
@@ -121,3 +113,25 @@
 
 ;; Goto line
 (global-set-key (kbd "s-g") 'goto-line)
+
+;; CC-mode
+
+;; Hook to indent 
+;; (defun my-make-CR-do-indent ()
+;;   (define-key c-mode-base-map "\C-m" 'c-context-line-break))
+;; (add-hook 'c-initialization-hook 'my-make-CR-do-indent)
+
+;; Customizations for all modes in CC Mode.
+(defun my-c-mode-common-hook ()
+  ;; this will make sure spaces are used instead of tabs
+  (setq indent-tabs-mode nil)
+  
+  ;; enable minor modes
+  (c-toggle-electric-state 1)
+  (c-toggle-auto-hungry-state 1)
+  (subword-mode 1)
+  (c-toggle-syntactic-indentation 1)
+  )
+(add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+
+

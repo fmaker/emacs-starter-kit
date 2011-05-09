@@ -5,7 +5,7 @@
   ;; If there is more than one, they won't work right.
  '(backup-by-copying t)
  '(backup-directory-alist (quote (("." . "~/.saves"))))
- '(c-default-style (quote ((c-mode . "linux"))))
+ '(c-default-style (quote ((c-mode . "linux") (java-mode . "java") (awk-mode . "awk") (other . "linux"))))
  '(desktop-save t)
  '(desktop-save-mode t)
  '(global-hi-lock-mode nil)
