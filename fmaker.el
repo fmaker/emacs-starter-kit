@@ -119,3 +119,5 @@
 (global-set-key (kbd "s-n") 'windmove-down)
 (global-set-key (kbd "s-p") 'windmove-up)
 
+;; Goto line
+(global-set-key (kbd "s-g") 'goto-line)
