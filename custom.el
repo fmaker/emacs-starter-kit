@@ -16,6 +16,7 @@
  '(scroll-step 1)
  '(server-auth-dir "/home/fmaker/.emacs.d/server/")
  '(server-mode t)
+ '(show-trailing-whitespace t)
  '(sr-speedbar-width-x 48)
  '(tool-bar-mode nil)
  '(truncate-lines t)
