@@ -14,7 +14,7 @@
  '(menu-bar-mode t)
  '(scroll-bar-mode nil)
  '(scroll-step 1)
- '(server-auth-dir "n/home/fmaker/.emacs.d/server/")
+ '(server-auth-dir "/home/fmaker/.emacs.d/server/")
  '(server-mode t)
  '(sr-speedbar-width-x 48)
  '(tool-bar-mode nil)

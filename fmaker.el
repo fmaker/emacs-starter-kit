@@ -7,14 +7,6 @@
 (set-foreground-color "green")
 (set-cursor-color "green")
 
-;; Setup Tex mode to use pdflatex
-(setq latex-run-command "pdflatex")
-
-;; PDF Viewer
-(defun tex-view ()
-    (interactive)
-    (tex-send-command "evince" (tex-append tex-print-file ".pdf")))
-
 ;; Font
 ;;(set-face-attribute 'default nil :height 85)
 (set-default-font "Monospace:pixelsize=12")
@@ -133,5 +125,15 @@
   (c-toggle-syntactic-indentation 1)
   )
 (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+
+;; Latex related
+(load "auctex.el" nil t t)
+(load "preview-latex.el" nil t t)
+(setq latex-run-command "pdflatex")
+(add-hook 'LaTeX-mode-hook 'TeX-PDF-mode)
+
+(defun tex-view ()
+    (interactive)
+    (tex-send-command "evince" (tex-append tex-print-file ".pdf")))
 
 
